@@ -34,3 +34,5 @@ node_modules
 /metadata/index.js
 /metadata/routes.js
 /typings/mykoop/mykoop.d.ts
+/locales/index.js
+/components/index.js
