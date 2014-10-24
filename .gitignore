@@ -36,3 +36,5 @@ node_modules
 /typings/mykoop/mykoop.d.ts
 /locales/index.js
 /components/index.js
+/locales/fr/index.js
+/locales/en/index.js
