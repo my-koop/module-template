@@ -1,5 +1,5 @@
-class ModuleClass1 implements mkmodule.ModuleClass1 {
-  sMember: string;
-  iMember: number;
+class ModuleClass1 implements mkmymodule.ModuleClass1 {
+  value: string;
+  id: number;
 }
 export = ModuleClass1;

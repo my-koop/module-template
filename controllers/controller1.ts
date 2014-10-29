@@ -1,7 +1,7 @@
 import express = require("express");
 
 function controller1(req: express.Request, res: express.Response) {
-  var self: mkmodule.Module = this;
+  var self: mkmymodule.Module = this;
 
   if (!req.params.id) {
     res.status(400).send("Invalid id value");
@@ -12,7 +12,7 @@ function controller1(req: express.Request, res: express.Response) {
     value: "Test"
   };
 
-  self.method1(params, function(err, ret: mkmodule.ModuleClass1) {
+  self.method1(params, function(err, ret: mkmymodule.ModuleClass1) {
     if (err) {
       return res.send(500);
     }
