@@ -27,14 +27,4 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 *.sublime-workspace
-/index.js
-/lib/bridge.js
-/lib/index.js
-/lib/module.js
-/metadata/index.js
-/metadata/routes.js
 /typings/mykoop/mykoop.d.ts
-/locales/index.js
-/components/index.js
-/locales/fr/index.js
-/locales/en/index.js

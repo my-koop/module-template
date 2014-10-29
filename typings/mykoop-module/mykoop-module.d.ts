@@ -3,14 +3,18 @@
 // Definitions by: Michael Ferris <https://github.com/Cellule/>
 // Definitions: https://github.com/my-koop/type.definitions
 
-declare module mykoop {
-  export interface IModule {}
-}
-
+/// <reference path="../mykoop/mykoop.d.ts" />
 declare module mkmodule {
 
-  export class Module implements mykoop.IModule{
-    method1(par1: string): string;
+  export interface ModuleClass1 {
+    sMember: string;
+    iMember: number;
+  }
+  export interface Module extends mykoop.IModule {
+    method1(
+      inParam: {id:number; value:string},
+      callback: (err: Error, res ?: mkmodule.ModuleClass1) => void
+    ): void;
   }
 
 }

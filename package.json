@@ -1,5 +1,5 @@
 {
-  "name": "mykoop-module",
+  "name": "mykoop-base",
   "version": "0.0.1",
   "description": "base module for My Koop",
   "main": "index.js",
