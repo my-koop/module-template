@@ -15,7 +15,7 @@ class Module extends utils.BaseModule implements mkmodule.Module {
       return callback(new Error("Wrong id"));
     }
     var res = new ModuleClass1();
-    res.iMember = inParam.id+1;
+    res.iMember = inParam.id + 1;
     res.sMember = inParam.value;
     callback(null, res);
   }
