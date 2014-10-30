@@ -20,10 +20,16 @@ var PlaceHolder = React.createClass({
   executeMyRequest: function() {
     actions.example.get1({
       data: {
-        id:14
+        id:14,
+        value: "test"
       }
     }, function(err, res) {
-      console.log(err || res.body);
+      if(err) {
+        return console.log(err);
+      }
+
+      console.log("Success");
+      console.log(res.body);
     });
   },
 

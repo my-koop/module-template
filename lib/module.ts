@@ -16,7 +16,7 @@ class Module extends utils.BaseModule implements mkmymodule.Module {
     }
     var res = new ModuleClass1();
     res.id = inParam.id + 1;
-    res.value = inParam.value;
+    res.value = inParam.value + " Incremented id by 1";
     callback(null, res);
   }
 }
