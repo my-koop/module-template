@@ -24,7 +24,12 @@ var PlaceHolder = React.createClass({
         value: "test"
       }
     }, function(err, res) {
-      console.log(arguments);
+      if(err) {
+        return console.log(err);
+      }
+
+      console.log("Success");
+      console.log(res.body);
     });
   },
 
