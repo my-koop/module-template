@@ -4,7 +4,7 @@ var React = require("react");
 var PropTypes = React.PropTypes;
 var Link = require("react-router").Link;
 var BSCol = require("react-bootstrap/Col");
-var RouteInfo = require("routeInformation");
+var routeData = require("dynamic-metadata").routes;
 var BSButton = require("react-bootstrap/Button");
 var actions = require("actions");
 
@@ -41,7 +41,7 @@ var PlaceHolder = React.createClass({
           {name}
         </h1>
         This is a placeholder with no interesting content what so ever
-        <Link to={RouteInfo.homepage.name}>Go to homepage.</Link>
+        <Link to={routeData.public.name}>Go to homepage.</Link>
         <BSButton onClick={this.executeMyRequest}>Test Request</BSButton>
         {/* Translation string usage. */}
         <p>{__("newkey")}</p>
