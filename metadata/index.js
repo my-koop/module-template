@@ -3,7 +3,7 @@ var routes = require("./routes");
 var translations = require("../locales/index");
 var endpoints = require("./endpoints");
 
-var metaDataBuilder = new utils.MetaData();
+var metaDataBuilder = new utils.MetaDataBuilder();
 routes.addRoutes(metaDataBuilder);
 
 metaDataBuilder.addData("translations", translations);

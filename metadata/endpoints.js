@@ -2,7 +2,11 @@ var endpoints = {
     example: {
         get1: {
             path: "/example/:id",
-            method: "get"
+            method: "get",
+            validation: {
+                resolve: "validation",
+                value: "get1"
+            }
         }
     }
 };
