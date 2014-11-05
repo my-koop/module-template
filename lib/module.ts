@@ -1,6 +1,6 @@
 import utils = require("mykoop-utils");
-import ModuleClass1 = require("../classes/ModuleClass1");
-import controllerList = require("../controllers/index");
+import ModuleClass1 = require("./classes/ModuleClass1");
+import controllerList = require("./controllers/index");
 var ApplicationError = utils.errors.ApplicationError;
 
 class Module extends utils.BaseModule implements mkmymodule.Module {

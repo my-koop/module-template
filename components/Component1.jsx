@@ -17,18 +17,24 @@ var PlaceHolder = React.createClass({
     displayName : PropTypes.string
   },
 
+  test: 0,
+
   executeMyRequest: function() {
+    var value = this.test ? "test" : "testValid";
+    this.test = !this.test;
+
     actions.example.get1({
       data: {
         id:14,
-        value: "test"
+        value: value
       }
     }, function(err, res) {
       if(err) {
+        alert("Error");
         return console.log(err);
       }
 
-      console.log("Success");
+      alert("Success");
       console.log(res.body);
     });
   },

@@ -16,6 +16,6 @@ var updateDataConstraint = {
     }
   }
 }
-export function updateItem(obj) {
+export function get1(obj) {
   return validate(obj, updateDataConstraint);
 }
