@@ -13,10 +13,11 @@ class Module extends utils.BaseModule implements mkmymodule.Module {
     callback: (err: Error, res ?: mkmymodule.ModuleClass1) => void
   ) {
     if (!inParam.id) {
-      return callback(new ApplicationError({
+      return callback(new ApplicationError(
+        null,
+        {
           id: "custom message"
         },
-        null,
         "Wrong id"
       ));
     }

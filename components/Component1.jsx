@@ -17,7 +17,7 @@ var PlaceHolder = React.createClass({
     displayName : PropTypes.string
   },
 
-  test: 0,
+  test: false,
 
   executeMyRequest: function() {
     var value = this.test ? "test" : "testValid";
