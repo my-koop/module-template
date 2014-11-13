@@ -1,6 +1,6 @@
 function addRoutes(metaData) {
-    metaData.addRoute({
-        idPath: ["public", "example", "somepage"],
+    metaData.addFrontendRoute({
+        idPath: ["public", "example"],
         component: "Component1",
         name: "example",
         path: "/example"

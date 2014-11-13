@@ -27,4 +27,7 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 *.sublime-workspace
-/typings/mykoop/mykoop.d.ts
+/typings/mykoop*
+
+# FIXME:: Change this with new module name
+!/typings/mykoop-mymodule

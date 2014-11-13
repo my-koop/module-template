@@ -1,7 +1,7 @@
 import utils = require("mykoop-utils");
-export function addRoutes(metaData: utils.MetaData) {
-  metaData.addRoute({
-    idPath: ["public","example","somepage"],
+export function addRoutes(metaData: utils.MetaDataBuilder) {
+  metaData.addFrontendRoute({
+    idPath: ["public","example"],
     component: "Component1",
     name: "example",
     path: "/example"
