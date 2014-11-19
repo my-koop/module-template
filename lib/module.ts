@@ -12,7 +12,7 @@ class Module extends utils.BaseModule implements mkmymodule.Module {
     inParam: {id:number; value:string},
     callback: (err: Error, res ?: mkmymodule.ModuleClass1) => void
   ) {
-    if (!inParam.id) {
+    if (inParam.id === 1) {
       return callback(new ApplicationError(
         null,
         {

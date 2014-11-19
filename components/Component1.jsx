@@ -25,7 +25,7 @@ var PlaceHolder = React.createClass({
 
     actions.example.get1({
       data: {
-        id:14,
+        id:1,
         value: value
       }
     }, function(err, res) {

@@ -5,9 +5,6 @@ function controller1(req: express.Request, res: express.Response) {
 
   var id = req.param("id");
   var value = req.param("value");
-  if (!id || typeof value !== "string") {
-    return res.status(400).send("Missing data");
-  }
 
   var params = {
     id: parseInt(id) || 0,
@@ -16,7 +13,7 @@ function controller1(req: express.Request, res: express.Response) {
 
   self.method1(params, function(err, ret: mkmymodule.ModuleClass1) {
     if (err) {
-      return res.send(500);
+      return res.error(err);
     }
 
     res.send(ret);
